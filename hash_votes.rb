@@ -8,7 +8,8 @@ end
 
 lines.each do |line|
   name = line.chomp
+  name.downcase!
   votes[name] += 1
 end
 
-p votes
+votes.each { |key, value| puts "#{key.upcase} : #{value}" }
