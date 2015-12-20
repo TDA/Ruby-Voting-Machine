@@ -1,4 +1,5 @@
-votes = {}
+# initialize all keys with 0
+votes = Hash.new(0)
 
 lines = []
 File.open("./votes.txt") do |file|
@@ -7,11 +8,7 @@ end
 
 lines.each do |line|
   name = line.chomp
-  if votes.has_key?(name)
-    votes[name] += 1
-  else
-    votes[name] = 1
-  end
+  votes[name] += 1
 end
 
 p votes
