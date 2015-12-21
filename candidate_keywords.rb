@@ -6,7 +6,7 @@ class CandidateKeywords
     # dont forget the colon :, i personally prefer
     # JS's object literal approach and/or
     # pythons dictionary approach
-    @occupation = occupation
+    @occupation = occupation # aua object[:occupation] iff object was the param instead of keyword params
     @age = age
     @birthplace = birthplace
   end
@@ -24,5 +24,5 @@ p sai
 sai = CandidateKeywords.new("Sai", occupation: "Being Awesome", age: 22, birthplace: "Chennai")
 p sai
 
-sai = CandidateKeywords.new("Sai")
+#sai = CandidateKeywords.new("Sai", occupatiin: 123)
 p sai
