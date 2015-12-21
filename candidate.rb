@@ -4,6 +4,9 @@ class Candidate
 
   def initialize(name, options = {})
     @name = name
+    # dont forget the colon :, i personally prefer
+    # JS's object literal approach and/or
+    # pythons dictionary approach
     @occupation = options[:occupation]
     @age = options[:age]
     @birthplace = options[:birthplace]
